@@ -4,15 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chad Johnson</title>
+    <link rel="icon" type="image/png" href="img/spaceship.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <p>This is a simple portfolio site.</p>
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#connect">Connect</a></li>
-    </ul>
+<header>
+    <div class="header-content">
+        <img src="img/profile.jpg" alt="Chad Johnson" class="profile-pic">
+        <div class="header-text">
+            <h1>Chad Johnson</h1>
+            <h2>Staff Software Engineer at Intuit</h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>As a dedicated and passionate software engineer, I thrive on continuous learning and mentoring others. My journey has taken me from developing automated tests for power industry software as an intern to a Staff Software Engineer at Intuit, where I've played pivotal roles in high-impact projects. I excel in coaching and mentoring new engineers, helping them quickly come up to speed while fostering their growth and confidence. My ability to translate complex technical concepts with empathy and patience has allowed me to build strong, positive relationships within my teams.</p>
+        <p>In my lead roles, I have balanced multiple responsibilities, from acting as scrum master and partnering with PMs to architecting major deliverables and delivering quality code. My proactive nature and strong ownership have driven significant improvements, always focusing on delivering quality with speed and promoting a strong team culture. I hold myself to a high standard of quality, ensuring that I leave the codebase better than I found it. My thorough approach to coding and reviewing work has consistently resulted in meaningful improvements and reduced technical debt.</p>
+        <p>I believe in the power of collaboration and continuous improvement, always seeking to motivate and positively influence those around me. My goal is to deliver exceptional results while supporting the individual growth of my team members and contributing to a thriving engineering culture.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <h3>Intuit</h3>
+
+        <!-- Intuit - Staff Software Engineer -->
+        <div class="experience-item">
+            <h4>Staff Software Engineer</h4>
+            <p><strong>Dates:</strong> Aug 2023 - Present</p>
+        </div>
+
+        <!-- Intuit - Senior Software Engineer -->
+        <div class="experience-item">
+            <h4>Senior Software Engineer</h4>
+            <p><strong>Dates:</strong> Feb 2020 - Aug 2023 <span class="duration">(3 years 7 months)</span></p>
+            <p>Serving as a development lead, I played a pivotal role in onboarding new engineers and leading critical projects that drove significant business impact. I onboarded over a dozen engineers, guiding them through orientation, fostering a collaborative culture, and ensuring they had the tools and knowledge to succeed. I conducted monthly one-on-ones to support their career goals and provided regular feedback.</p>
+            <p>Leading cross-functional teams, I spearheaded high-impact projects such as introducing customer survey intercepts for product feedback, adding real-time events for product marketing campaigns, rebranding our product, and migrating sign-ups and authentication to Intuit’s ecosystem solutions. These initiatives required meticulous planning, execution, and collaboration with product managers and designers to ensure seamless integration and high-quality outcomes. I created data-backed documentation to scope work accurately, raise concerns early to leadership, and inform stakeholders to keep projects on track.</p>
+            <p>In addition to my leadership responsibilities, I consistently contributed by executing on development tasks and reviewing pull requests, ensuring progress on each project. My open contributions to other Intuit services on these projects expedited work on dependencies and provided opportunities to work in different tech stacks outside my development organization.</p>
+            <p>I took ownership of various projects, developing monitoring and alerting systems to ensure long-term success, and providing ongoing support, documentation, and training. Additionally, I developed a suite of UI regression tests in Cypress, with a Jenkins pipeline for regular test runs and automated alerts, ensuring critical product workflows remained intact and issues were caught early. I championed a blameless culture, collaborating on root cause analyses, and defining action items to prevent future issues.</p>
+        </div>
+
+        <!-- Intuit - Software Engineer 2 -->
+        <div class="experience-item">
+            <h4>Software Engineer 2</h4>
+            <p><strong>Dates:</strong> Aug 2018 - Feb 2020 <span class="duration">(1 year 7 months)</span></p>
+            <p>I quickly integrated into Intuit's processes, products, and technologies while contributing individually and collaboratively within Agile teams. I delivered on development sprint tasks, wrote automated tests and comprehensive test plans, and performed code reviews to ensure code quality. Actively participating in agile ceremonies, I estimated work, reflected on sprint outcomes, and suggested improvements for future iterations.</p>
+            <p>A key responsibility was monitoring application health and resolving production issues, where I investigated root causes, accounted for rollbacks, and measured customer impact. I communicated findings and lessons learned across the product development organization to drive continuous improvement.</p>
+            <p>I authored comprehensive design documents for new features, working closely with product managers and designers to align on requirements and UI changes. This included detailing architectural decisions, UI modifications, schema changes, rollout plans, and monitoring strategies. I also outlined and estimated manageable tasks to ensure clear tracking of progress and dependencies.</p>
+            <p>In addition to development work, I participated in an escalations rotation, building customer empathy by addressing production issues and collaborating with customer support to provide timely remedies and next steps. I also taught the design doc and reviews onboarding training, introducing new developers to our processes of authoring, collaborating, and reviewing design documents.</p>
+        </div>
+
+        <h3>Schweitzer Engineering Laboratories (SEL)</h3>
+
+        <!-- Schweitzer Engineering Laboratories (SEL) - Software Engineer -->
+        <div class="experience-item">
+            <h4>Software Engineer</h4>
+            <p><strong>Dates:</strong> Jan 2017 - Jul 2018 <span class="duration">(1 year 7 months)</span></p>
+            <p>I successfully led the development of a new web application using the Angular framework, establishing development processes and standards for our team. This project culminated in a high-quality web client that met internal needs and introduced a new feature to our existing REST API service.</p>
+            <p>In addition to web development, I gained proficiency in .NET Core, NuGet, and PowerShell scripting, applying these skills to enhance our continuous integration (CI) environment using Atlassian's Bamboo. I played a key role in addressing build and artifact needs, participating in a Bamboo CI group to improve processes and assist other teams transitioning to the Atlassian suite.</p>
+            <p>My contributions included planning and implementing the deployment of the service with .NET Standard, enabling cross-platform compatibility. Despite the rapid evolution of .NET Core and challenges with dependent service compatibility, I remained diligent and methodical, ensuring a successful and risk-aware deployment.</p>
+            <p>I also supervised a new intern, developing my leadership skills and fostering professional growth within the company culture. I conducted regular one-on-ones, provided constructive feedback, and delegated tasks, ensuring a supportive and productive learning environment.</p>
+        </div>
+
+        <!-- Schweitzer Engineering Laboratories (SEL) - Associate Software Engineer -->
+        <div class="experience-item">
+            <h4>Associate Software Engineer</h4>
+            <p><strong>Dates:</strong> Jan 2015 - Jan 2017 <span class="duration">(2 years 1 month)</span></p>
+            <p>I developed a full-stack solution for a customizable workflow editor enabled customers to define workflows for versioning device settings. This required extending the functionality of a Windows C# application using Windows Presentation Foundation (WPF) and PostgreSQL. My responsibilities included defining software requirements, creating UML class and sequence diagrams approved through peer review, writing automated unit and integration tests, and planning and estimating project timelines.</p>
+            <p>I also contributed to a new REST API service for managing device configuration data. Leveraging technologies such as the ServiceStack framework, C#, PostgreSQL, and SQLite, I extended the functionality of the API service by contributing to API definitions, business logic, automated tests, and schema definitions.</p>
+            <p>Additionally, I mentored new interns, helping them acclimate to the development environment by supporting their onboarding with our tools, processes, and product.</p>
+        </div>
+
+        <!-- Schweitzer Engineering Laboratories (SEL) - Software Engineering Intern -->
+        <div class="experience-item">
+            <h4>Software Engineering Intern</h4>
+            <p><strong>Dates:</strong> Feb 2013 - Jan 2015 <span class="duration">(2 years)</span></p>
+            <p>Collaborating with a team both locally and remote, I developed automated tests in JScript for validating the functionality of Windows applications used to configure and maintain power protection and automation devices. My role involved writing tests according to specified requirements, identifying, documenting, and effectively communicating issues. Additionally, I focused on improving test coverage and efficiency, and provided valuable feedback during code reviews to enhance test maintainability.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Add your project showcase here -->
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <div class="education-details">
+                <h3>Boise State University</h3>
+                <p>Bachelor of Science, Computer Science</p>
+                <p>Graduated Spring 2015</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-links">
+        <a href="https://github.com/johnsoncr34" target="_blank">
+            <img src="img/github.png" alt="GitHub" width="30" height="30">
+        </a>
+        <a href="https://www.linkedin.com/in/chad-r-johnson" target="_blank">
+            <img src="img/linkedin.png" alt="LinkedIn" width="30" height="30">
+        </a>
+    </div>
+    <div class="footer-email">
+        <a href="mailto:chadrj34@gmail.com" class="email-link">chadrj34@gmail.com</a>
+    </div>
+</footer>
+<script src="js/scripts.js"></script>
 </body>
 </html>
-
