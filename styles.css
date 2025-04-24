@@ -1,0 +1,260 @@
+/* Imported Google Fonts */
+@import url(https://themes.googleusercontent.com/fonts/css?kit=IVeH6A3MiFyaSEiudUMXE0jh6hI5UqLWfbPOFkFQ-hVzrgEfZuYWAr4gELPXGWb8aTVLx6kIemmEEeJPDi5fVA);
+
+:root {
+    /* Colors */
+    --color-primary: #4287f5;
+    --color-text: #000000;
+    --color-background: #ffffff;
+    --color-border: #000000;
+
+    /* Font families */
+    --font-primary: "Montserrat", Arial, sans-serif;
+    --font-heading: "Rubik", sans-serif;
+
+    /* Font weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Font sizes */
+    --font-size-small: 0.833rem;    /* 10pt */
+    --font-size-normal: 0.917rem;   /* 11pt */
+    --font-size-medium: 1.083rem;   /* 13pt */
+    --font-size-large: 1.667rem;    /* 20pt */
+    --font-size-xlarge: 2.833rem;   /* 34pt */
+
+    /* Borders */
+    --border-width-normal: 0.083rem; /* 1pt */
+    --border-width-thick: 0.183rem;  /* 2.2pt */
+
+    /* Layout */
+    --main-column-width: 68%;
+    --side-column-width: 32%;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+body.doc-content {
+    background-color: var(--color-background);
+    max-width: 50rem;
+    padding: 2rem 0;
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    line-height: 1.25rem;
+    width: 100%;
+}
+
+.contact-section,
+.contact-section-links {
+    display: grid;
+    grid-template-columns: 35% 35% 1fr;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact-section-links {
+    margin-top: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.date-icon {
+    width: 0.8rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1rem;
+}
+
+.date-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: var(--main-column-width) var(--side-column-width);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.name-header {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xlarge);
+}
+
+.section-header {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-large);
+    border-bottom: var(--border-width-thick) solid var(--color-border);
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.job-container {
+  margin-bottom: 1.5rem;
+}
+
+.job-title {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-medium);
+    margin: 0.5rem 0;
+}
+
+.sub-section-header-emp {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-normal);
+    color: var(--color-primary);
+    margin: 0.5rem 0;
+}
+
+.date-range {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-light);
+    margin: 0.5rem 0;
+}
+
+.bullet-point-heading {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+}
+
+.bullet-point-text {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-light);
+}
+
+.sub-section-header {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-normal);
+    margin: 0.5rem 0;
+}
+
+.resume-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-list li {
+    margin-left: 1rem;
+    padding-left: -0.75rem;
+    line-height: 1.35;
+}
+
+.resume-list li::before {
+    content: "•";
+    display: inline-block;
+    margin-left: -0.75rem;
+    white-space: nowrap;
+    min-width: 0.75rem;
+}
+
+/* Responsive design - SCREEN ONLY */
+@media screen and (max-width: 800px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .name-header {
+        font-size: var(--font-size-large);
+    }
+
+    .section-header {
+        font-size: var(--font-size-medium);
+    }
+}
+
+/* Print-specific styles */
+@media print {
+    body.doc-content {
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+
+    .content-grid {
+        gap: 0.8rem;
+    }
+
+    html {
+        background: none;
+    }
+
+    /* Ensure the two-column layout is preserved for print */
+    .content-grid {
+        display: grid;
+        grid-template-columns: var(--main-column-width) var(--side-column-width);
+    }
+
+    /* Optimize font sizes for print - reduced for more compact layout */
+    .name-header {
+        font-size: 20pt;
+    }
+
+    .section-header {
+        font-size: 14pt;
+        padding-bottom: 0.4rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .job-title {
+        font-size: 11pt;
+        margin: 0.3rem 0;
+    }
+
+    .sub-section-header,
+    .sub-section-header-emp {
+        font-size: 10pt;
+        margin: 0.3rem 0;
+    }
+
+    .date-range {
+        margin: 0.3rem 0;
+    }
+
+    .bullet-point-text,
+    .bullet-point-heading {
+        font-size: 9pt;
+    }
+
+    .resume-list li {
+        line-height: 1.2;
+    }
+
+    .job-container {
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+
+    .contact-icon,
+    .date-icon {
+        width: 0.7rem;
+    }
+}
